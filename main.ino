@@ -9,8 +9,8 @@
 #define right_motor_speed 11
 
 //Motor Speed Coefficient
-#define spl 25 
-#define spr 22
+#define spl 20 
+#define spr 17  
 
 const int STBY = 8; //Motor stand-by
 
@@ -40,8 +40,20 @@ void setup() {
 }
 
 void loop() {
+  // show_the_value();
+  line_follow();
   // reading();
-  show_the_value();
+  // if(
+  //     sensor == 0b00011110 || sensor == 0b00111110 ||
+  //     sensor == 0b00001110 || sensor == 0b00001111 || 
+  //     sensor == 0b00011111
+  //   ){
+  //     motor(10 * spl, 10 * spr);
+  //     delay(15);
+  //     motor(0, 0);
+  //   }
+  //   else if(sensor == 0b00011000) motor(10 * spl, 10 * spr);
+  // else motor(0, 0);
 }
 
 
